@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+}
+h1:hover{
+    color:aqua;
+}
+strong{
+    color: blueviolet;
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+}
+.wrong{
+    color: red;
+    font-weight: bold;
+}
+.true{
+    color: green;
+    font-weight: bold;
+}
