@@ -37,3 +37,8 @@ let warnaBaju = WARNA_BIRU;
 if(true){
     console.log(warnaBaju);
 }
+const stringIsiKutipSatu = 'ini string tapi aku bisa nulis kutip dua disini, liat nih ", tuh kan !'
+console.log(stringIsiKutipSatu);
+const namaDepan = "Zaki";
+const tempatLahir = "Tenggarong";
+console.log(`Hallo, Nama ku ${namaDepan}, aku lahir di ${tempatLahir}`);
