@@ -6,15 +6,19 @@
 // }
 
 // For itu "Diulang Sampai"
-for (let x = 1; x <= 5; x++) {
-    let temp = ''
-    
-    for (let z = 1; z <= x; z++) {
-      temp += z + ' '
-    }
-    
-    console.log(temp)
-  }
+const ulang = a =>{
+    for (let x = 1; x <= a; x++) {
+        let temp = ''
+        
+        for (let z = 1; z <= x; z++) {
+          temp += x
+        }
+        
+        console.log(temp)
+      }
+}
+console.log(ulang(5))
+
   
   console.log('==========================================================')
   console.log('==========================================================')
