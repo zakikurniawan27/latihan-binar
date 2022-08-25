@@ -76,49 +76,94 @@
 // ****
 // ***
 // **
-//*
-// const star = (a,b,c,d,e) =>{
-//   for(let i = d; i <= a; i++){
+// *
+// const star = (a) =>{
+//   for(let i = 1; i <= a; i++){
 //     let temp = ''
-//     for(let j = b; j <= i; j++){
+//     for(let j = 1; j <= i; j++){
 //       temp += '*' + ''   
 //     }
 //     console.log(temp)
 //   }
-//   for(let k = e; k >= c; k--){
+//   for(let k = 3; k >= 1; k--){
 //     let temp = ''
-//     for(let l = b; l <= k; l++){
+//     for(let l = 1; l <= k; l++){
 //       temp += '*' + ''
 //     }
 //     console.log(temp)
 //   }
 // }
-// console.log(star(4,1,1,1,3))
+// console.log(star(5))
 
+/*
+         1
+       22122
+    33322122333
+4444333221223334444
+*/
+// const ulang = (a) =>{
+//   let temp = ''
+//   for(let i = 1; i <= a; i++){
+//     for(let j = a; j >= 1 ; j--){
+//       for(let k = 1; k<=j; k++){
+//         if(j > i){
+//           temp += '='
+//         }else{
+//           temp += j
+//         }
+//         // temp += j
+//       }
+//     }
+//     for(let j = 2; j <= a ; j++){
+//       for(let k = 1; k<=j; k++){
+//         if(j > i){
+//           temp += '='
+//         }else{
+//           temp += j
+//         }
+//         // temp += j
+//       }
+//     }
+//     temp +='\n'
+//   }
+//   return temp
+// }
+// console.log(ulang(4))
 
-// =========1=========
-// =======22122=======
-// ====33322122333====
-// 4444333221223334444
-const ulang = (a,b) =>{
-  for(let i = a; i <= b; i++){
-    let temp = ''
-    for(let j = a; j <= i; j++){
-      temp += i + ''
-      for(let k = a; k <= j; k++){
-        temp += j + ''
-      }
-    }
-    console.log(temp)
-  }
-}
-console.log(ulang(1,4))
 
 // 1223334444333221
 // =22333444433322=
 // ===3334444333===
 // ======4444======
-  
+const ulang = (a) =>{
+  let temp = ''
+  for(let i = 1; i <= a; i++){
+    for(let j = 1; j <= a ; j++){
+      for(let k = 1; k<=j; k++){
+        if(j < i){
+          temp += '='
+        }else{
+          temp += j
+        }
+        // temp += j
+      }
+    }
+    for(let j = 3; j >= 1 ; j--){
+      for(let k = 1; k<=j; k++){
+        if(j < i){
+          temp += '='
+        }else{
+          temp += j
+        }
+        // temp += j
+      }
+    }
+    temp +='\n'
+  }
+  return temp
+}
+console.log(ulang(4))  
+
   // let i = 1
   // // While itu "Diulang selama"
   // while(i<=10){
